@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<main role="main">
+
+{{ partial "header.html" . }}
+
+<div class="site-title">
+  {{ .Title }}
+</div>
+{{ with .Params.subtitle }}
+<span class="subtitle">{{.}}</span>
+{{ end }}
+
+
+<div class="homepage-content">
+  {{.Content}}
+</div>
+
+<div>
+  {{ range first 10 .Pages }}
+  {{ .Render "summary" }}
+  {{end}}
+</div>
+
+
+{{ partial "footer.html" . }}
+
+</main>
+
+{{ end }}
