@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="post">
+  <header>
+    <h2><a href='{{ .Permalink }}'> {{ .Title }}</a> </h2>
+
+    Categories: <span>
+      {{ range .Params.categories }}
+      <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{- . -}} </a>
+      {{ end }}
+      </span>
+
+    <div class="post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+  </header>
+  {{ .Content }}
+  <footer>
+  </footer>
+</article>
+{{ end }}
