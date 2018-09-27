@@ -12,6 +12,10 @@
   </header>
   {{ .Summary }}
   <footer>
-  <a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>
+    {{ if .Truncated }}
+    <div>
+    <a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>
+    </div>
+    {{ end }}
   </footer>
 </article>
