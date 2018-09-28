@@ -1,21 +1,21 @@
 <article class="post">
   <header>
-    <h2><a href='{{ .Permalink }}'> {{ .Title }}</a> </h2>
-
-    Categories: <span>
+     <div class="categories-post-home">
       {{ range .Params.categories }}
       <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{- . -}} </a>
       {{ end }}
-      </span>
+      </div>
+
+      <h1 class="post-title-home"><a href='{{ .Permalink }}'> {{ .Title }}</a> </h1>
+
 
     <div class="post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }} - {{ .FuzzyWordCount }} Words </div>
   </header>
   {{ .Summary }}
-  <footer>
-    {{ if .Truncated }}
-    <div>
-    <a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>
-    </div>
-    {{ end }}
-  </footer>
-</article>
+  {{ if .Truncated }}
+
+  <div class="read-more-div" >
+    <a href='{{ .Permalink }}' class="read-more" ><nobr>Read more</nobr></a>
+  </div>
+  {{ end }}
+ </article>
