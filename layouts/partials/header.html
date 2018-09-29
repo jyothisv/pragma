@@ -1,7 +1,9 @@
-<div id="site-title">
+<div id="site-title-subtitle">
+<span id="site-title">
     {{- .Site.Title -}}
-  </div>
-
+</span>
+<br>
   {{ with .Site.Params.description }}
-  <div id="site-subtitle">{{- . -}}</div>
+<span id="site-subtitle">{{- . -}}</span>
 {{ end }}
+</div>
