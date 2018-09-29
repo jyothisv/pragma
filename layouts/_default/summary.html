@@ -9,9 +9,10 @@
 
 
     <div class="post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }} - {{ .FuzzyWordCount }} Words </div>
-  </header>
+
   {{ .Summary }}
-  {{ if .Truncated }}
+
+    {{ if .Truncated }}
 
   <div class="read-more-div" >
     <a href='{{ .Permalink }}' class="read-more" ><nobr>Read more</nobr></a>
