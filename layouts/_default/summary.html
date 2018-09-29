@@ -1,14 +1,6 @@
 <article class="post">
-     <div class="categories-post-home">
-      {{ range .Params.categories }}
-      <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{- . -}} </a>
-      {{ end }}
-      </div>
 
-      <h1 class="post-title-home align-center"><a href='{{ .Permalink }}'> {{ .Title }}</a> </h1>
-
-
-    <div class="post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }} - {{ .FuzzyWordCount }} Words </div>
+  {{ partial "post-title.html" . }}
 
   {{ .Summary }}
 
