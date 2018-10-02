@@ -1,20 +1,109 @@
 /* Pragma.css */
 
-body {
-    font-size: 14px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    /* font-family: 'Roboto', sans-serif; */
+html {
 }
 
-article {
+body {
+    font-size: 16px;
+    color: #111111;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.7rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
     font-size: 1.2rem;
 }
 
-p {
-    padding-top: 1.5rem;
+
+.container {
+    padding: 0rem;
 }
 
+p {
+
+}
+
+
+/* Code */
+pre {
+    border-left: 0.2rem solid #9b4dca;
+}
+
+
+pre > code {
+    padding-left: 0.7rem;
+}
+
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+}
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+    .main-column {
+        width: 65rem;
+        padding-right: 1.5rem;
+    }
+
+    .side-column {
+        width: 40rem;
+        padding-left: 1.5rem;
+    }
+
+    /* Code */
+    pre {
+        border-left-width: 0.3rem;
+    }
+
+    pre > code {
+        padding-left: 1rem;
+    }
+
+}
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) {
+}
+
+
+
+
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main {
+    flex: 40%;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 30%;
+    padding: 20px;
+}
+
+
+img {
+    width: 100%;
+}
 
 .read-more {
     color: black;
@@ -30,8 +119,8 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-    padding-bottom: 1em;
-    padding-top: 1em;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
 }
 
 .category {
@@ -85,7 +174,6 @@ div#site-title-subtitle {
 }
 
 time.published {
-    font-size: 0.9rem;
     font-style: italic;
     color: #666666;
 }
@@ -96,15 +184,30 @@ time.published {
     color: #666666;
 }
 
-p:first-of-type:first-letter {
-    display: block;
-    margin: 5px 0px 0px 5px;
-    float: left;
-    font-family: "Georgia";
-    font-size: 8rem;
-}
+/* p:first-of-type:first-letter { */
+/*     display: block; */
+/*     margin: 5px 0px 0px 5px; */
+/*     float: left; */
+/*     font-family: "Georgia"; */
+/*     font-size: 8rem; */
+/* } */
 
-/* Code */
-.highlight {
 
-}
+
+/* Larger than mobile screen */
+/* @media (min-width: 40.0rem) { */
+/*     .wrapper { */
+/*         flex-direction: column; */
+/*     } */
+/* } */
+
+
+/* } */
+
+/* Larger than tablet screen */
+/* @media (min-width: 80.0rem) { */
+/* } */
+
+/* Larger than desktop screen */
+/* @media (min-width: 120.0rem) { */
+/* } */
