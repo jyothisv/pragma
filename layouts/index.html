@@ -4,11 +4,9 @@
   {{.Content}}
 </div>
 
-<div>
-  {{ range first 10 .Pages }}
-  {{ .Render "summary" }}
-  {{end}}
-</div>
+{{ range first 10 .Pages }}
+{{ .Render "summary" }}
+{{end}}
 
 
 {{ end }}
