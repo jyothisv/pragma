@@ -1,0 +1,20 @@
+  <div class="mini-title">
+    <h1 class="mini-post-title"><a href='{{ .Permalink }}'> {{ .Title }}</a> </h1>
+
+    <ul class="mini-post-categories">
+      {{ range .Params.categories }}
+      <li><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="cat-button">{{- . -}} </a></li>
+      {{ end }}
+    </ul>
+
+    <time class="mini-published">
+      <!-- <i class="far fa-calendar-alt"></i> -->
+      {{ with .Site.Params.dateFormat }}
+      {{ $.Date.Format . }}
+      {{ else }}
+      {{ .Date.Format "Mon, Jan 2, 2006" }}
+      {{ end }}
+    </time>
+
+    <!-- <span class="post-author">{{ .Params.author }}</span> -->
+  </div>
