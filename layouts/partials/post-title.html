@@ -1,24 +1,21 @@
-  <div class="title">
-    <h1><a href='{{ .Permalink }}'> {{ .Title }}</a> </h1>
-    <time class="published">
-      <i class="far fa-calendar-alt"></i>
-      {{ with .Site.Params.dateFormat }}
-      {{ $.Date.Format . }}
-      {{ else }}
-      {{ .Date.Format "Mon, Jan 2, 2006" }}
-      {{ end }}
-    </time>
-    <!-- <span class="post-author">{{ .Params.author }}</span> -->
-  </div>
-  <div class="meta">
-    <i class="fas fa-folder"></i>
+<div class="center">
+  <ul class="post-categories">
     {{ range .Params.categories }}
-    <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{- . -}} </a>
+    <li><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="cat-button">{{- . -}} </a></li>
     {{ end }}
-    <br/>
-    <i class="fas fa-tags"></i>
-    {{ range .Params.tags }}
-    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{- . -}} </a>
-    {{ end }}
+  </ul>
 
-  </div>
+<h1 class="post-title"><a href='{{ .Permalink }}'> {{ .Title }}</a> </h1>
+
+
+<time class="published">
+  <!-- <i class="far fa-calendar-alt"></i> -->
+  {{ with .Site.Params.dateFormat }}
+  {{ $.Date.Format . }}
+  {{ else }}
+  {{ .Date.Format "Mon, Jan 2, 2006" }}
+  {{ end }}
+</time>
+
+  <!-- <span class="post-author">{{ .Params.author }}</span> -->
+</div>
