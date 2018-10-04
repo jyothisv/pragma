@@ -4,7 +4,9 @@
   {{.Content}}
 </div>
 
-{{ range first 10 .Pages }}
+{{ $pages := (where .Pages "Section" "post") }}
+
+{{ range first 10 $pages }}
 {{ .Render "summary" }}
 {{end}}
 
