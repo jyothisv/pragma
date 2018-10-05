@@ -11,9 +11,14 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    color: #111111;
+}
+
 h1 {
     font-size: 3.5rem;
     margin-bottom: 0.7rem;
+    color: #111111;
 }
 
 h2 {
@@ -54,7 +59,7 @@ pre > code {
 
 /* Categories */
 .cat-button {
-    background-color: #333333;
+    background-color:  #8b2200;
     border: none;
     color: #eeeeee;
     padding: 0px 2px 0px 2px;
@@ -136,10 +141,23 @@ img {
     display: inline-block;
 }
 
+.read-more-button {
+    background-color:   #f5deb3;
+    border: 2px solid black;
+    color: #333333;
+    padding: 2px 2px 2px 2px;
+    margin: 0px 2px 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 12px;
+
+}
+
 .read-more-div {
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+    /* margin-left: 20rem; */
+    text-align: center;
     padding-bottom: 5rem;
     padding-top: 0.5rem;
 }
@@ -171,6 +189,7 @@ div#site-title-subtitle {
     font-size: 4em;
     letter-spacing: -0.01em;
     text-align: center;
+    font-color: #111111;
 }
 
 time.published {
@@ -258,4 +277,15 @@ h1.post-title {
 .page-copyright {
     text-align: right;
     border-top: 1px grey;
+}
+
+
+/* Social sharing */
+ul.social-sharing {
+    list-style-type: none;
+}
+
+ul.social-sharing li {
+    display: inline;
+    font-size: 3rem;
 }
