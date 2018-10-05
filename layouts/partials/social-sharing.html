@@ -1,0 +1,78 @@
+<!-- Adapted from Future Imperfect theme. -->
+
+<ul class="social-sharing">
+
+<!-- Twitter -->
+{{ if .Site.Params.socialShareTwitter }}
+<li>
+  <a href="//twitter.com/share?url={{ .Permalink }}&amp;text={{ .Title }}&amp;via={{ .Site.Social.twitter }}" target="_blank" class="share-btn twitter" alt="Twitter">
+    <i class="fab fa-twitter"></i>
+    </a>
+</li>
+{{ end }}
+
+<!-- Google Plus -->
+{{ if .Site.Params.socialShareGoogleplus }}
+<li>
+  <a href="//plus.google.com/share?url={{ .Permalink }}" target="_blank" class="share-btn google-plus" alt="Google+">
+    <i class="fab fa-google-plus"></i>
+  </a>
+</li>
+{{ end }}
+
+<!-- Facebook -->
+{{ if .Site.Params.socialShareFacebook }}
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" class="share-btn facebook" alt="Facebook">
+    <i class="fab fa-facebook"></i>
+  </a>
+</li>
+{{ end }}
+
+<!-- Reddit -->
+{{ if .Site.Params.socialShareReddit }}
+<li>
+  <a href="//reddit.com/submit?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank" class="share-btn reddit" alt="Reddit">
+    <i class="fab fa-reddit-alien"></i>
+  </a>
+</li>
+{{ end }}
+
+<!-- LinkedIn -->
+{{ if .Site.Params.socialShareLinkedin }}
+<li>
+  <a href="//www.linkedin.com/shareArticle?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank" class="share-btn linkedin" alt="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+  </a>
+</li>
+{{ end }}
+
+<!-- StumbleUpon -->
+{{ if .Site.Params.socialShareStumbleupon }}
+<li>
+  <a href="//www.stumbleupon.com/submit?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank" class="share-btn stumbleupon" alt="StumbleUpon">
+    <i class="fab fa-stumbleupon"></i>
+  </a>
+</li>
+{{ end }}
+
+<!-- Pintrest -->
+{{ if .Site.Params.socialSharePinterest }}
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url={{ .Permalink }}&amp;description={{ .Title }}" target="_blank" class="share-btn pinterest" alt="Pinterest">
+    <i class="fab fa-pinterest-p"></i>
+  </a>
+</li>
+{{ end }}
+
+<!-- Email -->
+{{ if .Site.Params.socialShareEmail }}
+<li>
+  <a href="mailto:?subject=Check out this post by {{ .Params.author }}&amp;body={{ .Permalink }}" target="_blank" class="share-btn email" alt="Email">
+    <i class="fab fa-envelope"></i>
+  </a>
+</li>
+{{ end }}
+
+</ul>
