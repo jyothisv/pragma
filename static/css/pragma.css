@@ -6,8 +6,8 @@ html {
 body {
     font-size: 16px;
     color: #111111;
-    padding-left: 1.0rem;
-    padding-right: 1.0rem;
+    padding-left: 3px;
+    padding-right: 3px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -16,8 +16,8 @@ a {
 }
 
 h1 {
-    font-size: 3.5rem;
-    margin-bottom: 0.7rem;
+    font-size: 48px;
+    margin-bottom: 1px;
     color: #111111;
 }
 
@@ -77,9 +77,9 @@ pre > code {
 }
 
 /* Larger than tablet screen */
-@media (min-width: 100.0rem) {
+@media (min-width: 1025px) {
     .main-column {
-        max-width: 70rem;
+        max-width: 700px;
         position: relative;
         margin: 0 auto 0 auto;
         /* padding-right: 1.5rem; */
@@ -94,11 +94,11 @@ pre > code {
 
     /* Code */
     pre {
-        border-left-width: 0.3rem;
+        border-left-width: 3px;
     }
 
     pre > code {
-        padding-left: 1rem;
+        padding-left: 15px;
     }
 
 }
