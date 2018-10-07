@@ -4,3 +4,56 @@
 
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.css"> -->
+
+<!-- <script type="text/javascript"> -->
+<!-- tocbot.init({ -->
+<!--   // Where to render the table of contents. -->
+<!--   tocSelector: '.toc', -->
+<!--   // Where to grab the headings to build the table of contents. -->
+<!--   contentSelector: '.post', -->
+<!--   // Which headings to grab inside of the contentSelector element. -->
+<!--   headingSelector: 'h1, h2, h3', -->
+<!-- }); -->
+<!-- </script> -->
+
+<!-- Adapted from Hugo Theme Refined -->
+<script type="application/javascript">
+  (function() {
+      var test = 1;
+      var $window = $(window);
+
+      if ($window.width() >= 1025) {
+          var $toc = $('nav#TableOfContents');
+          if ($toc.length > 0) {
+              function onScroll(){
+                  var currentScroll = $window.scrollTop();
+                  var h = $('h1, h2, h3, .content h4, .content h5, .content h6, .h-feed h2');
+                  var id = "";
+
+                  h.each(function (i, e) {
+                      e = $(e);
+                      if (e.offset().top - 10 <= currentScroll) {
+                          id = e.attr('id');
+                      }
+                  });
+                  var current = $toc.find('a.current');
+                  if (current.length == 1 && current.eq(0).attr('href') == '#' + id) return true;
+
+                  current.each(function (i, e) {
+                      $(e).removeClass('current').siblings('ul').hide();
+                  });
+
+
+                  $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+                      $(e).children('a').addClass('current').siblings('ul').show();
+                  });
+              }
+              $window.on('scroll', onScroll);
+              $(document).ready(function() {
+                  $toc.find('a').parent('li').find('ul').hide();
+                  onScroll();
+                  document.getElementsByClassName('toc-side')[0].style.display = '';
+              });}}})();
+</script>

@@ -2,7 +2,14 @@
 
 <article class="post">
 
+
     {{partial "post-title.html" . }}
+
+  <div class="toc-inline">
+    {{ with .TableOfContents }}
+    {{ . }}
+    {{ end }}
+  </div>
 
 
     {{ .Content }}
@@ -12,3 +19,17 @@
 </article>
 
   {{ end }}
+
+
+{{ define "sidebar" }}
+{{ with .TableOfContents }}
+<div class="toc-side no-text-decoration">
+  <!-- <nav id="TableOfContents"> -->
+  {{ . }}
+  <a href="#" class="back-to-top">Back to top</a>
+  <!-- </nav> -->
+</div>
+{{ end }}
+
+
+{{ end }}

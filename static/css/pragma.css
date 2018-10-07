@@ -6,8 +6,8 @@ html {
 body {
     font-size: 16px;
     color: #111111;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -33,10 +33,6 @@ h4 {
     font-size: 1.2rem;
 }
 
-
-.container {
-    padding: 0rem;
-}
 
 p {
 
@@ -72,59 +68,6 @@ pre > code {
 }
 
 
-/* Larger than mobile screen */
-@media (min-width: 40.0rem) {
-}
-
-/* Larger than tablet screen */
-@media (min-width: 1025px) {
-    .main-column {
-        max-width: 700px;
-        position: relative;
-        margin: 0 auto 0 auto;
-        /* padding-right: 1.5rem; */
-    }
-
-    .side-column {
-        width: 25rem;
-        padding-left: 1.5rem;
-        margin: 0 auto 0 0;
-        /* border-left: 1px solid #bbbbbb; */
-    }
-
-    /* Code */
-    pre {
-        border-left-width: 3px;
-    }
-
-    pre > code {
-        padding-left: 15px;
-    }
-
-}
-
-/* Larger than desktop screen */
-@media (min-width: 120.0rem) {
-}
-
-
-
-
-
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.main {
-    flex: 40%;
-    padding: 20px;
-}
-
-.sidebar {
-    flex: 30%;
-    padding: 20px;
-}
 
 
 img {
@@ -288,4 +231,95 @@ ul.social-sharing {
 ul.social-sharing li {
     display: inline;
     font-size: 3rem;
+}
+
+.toc-side {
+    display: none;
+    position: sticky;
+    max-width: 300px;
+    top: 2em;
+    /* border: 1px solid black; */
+    over-flow-y: auto;
+    max-height: 85%;
+    /* right: 20%; */
+    border-left: 3px solid #8b2200;
+
+}
+
+.toc-side li {
+    list-style-type: none;
+}
+
+.toc-side ul > li {
+    margin-bottom: 0.4em;
+}
+
+.toc-side ul {
+    padding-left: 0em;
+}
+
+.toc-side .back-to-top {
+    font-size: 0.7em;
+    padding-left: 2.7em;
+}
+
+.toc-side a.current {
+    color: blue;
+    font-weight: bold;
+}
+
+.toc-side a:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+
+.toc-inline li {
+    list-style-type: none;
+}
+
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+}
+
+/* Larger than tablet screen */
+@media (min-width: 1025px) {
+    .main-column {
+        max-width: 700px;
+        position: relative;
+        margin: 0 auto 0 auto;
+        /* padding-right: 1.5rem; */
+    }
+
+    .side-column {
+        width: 400px;
+        padding-left: 0em;
+        margin: 0 auto 0em 0;
+        /* position: sticky; */
+        /* top: 0; */
+        /* border-left: 1px solid #bbbbbb; */
+    }
+
+    /* Code */
+    pre {
+        border-left-width: 3px;
+    }
+
+    pre > code {
+        padding-left: 15px;
+    }
+
+    .toc-side {
+        display: block;
+    }
+
+    .toc-inline {
+        display: none;
+    }
+
+}
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) {
 }
