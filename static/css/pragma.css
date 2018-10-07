@@ -6,17 +6,28 @@ html {
 body {
     font-size: 16px;
     color: #111111;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    /* padding-left: 0.5em; */
+    /* padding-right: 0.5em; */
     font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 a {
     color: #111111;
+    text-decoration: none;
 }
 
+a:hover {
+    color: #555;
+}
+
+/* a:hover { */
+/*     font-weight: bold; */
+/* } */
+
 h1 {
-    font-size: 48px;
+    font-size: 42px;
     margin-bottom: 1px;
     color: #111111;
 }
@@ -45,17 +56,17 @@ p {
 
 /* Code */
 pre {
-    border-left: 0.2rem solid #9b4dca;
+    border-left: 0.2rem solid #8a8a96;
 }
 
 
 pre > code {
-    padding-left: 0.7rem;
+    padding-left: 10px;
 }
 
 /* Categories */
 .cat-button {
-    background-color:  #8b2200;
+    background-color: #24435c;
     border: none;
     color: #eeeeee;
     padding: 0px 2px 0px 2px;
@@ -85,10 +96,10 @@ img {
 }
 
 .read-more-button {
-    background-color:   #f5deb3;
-    border: 2px solid black;
-    color: #333333;
-    padding: 2px 2px 2px 2px;
+    background-color: #e6e6fa;
+    border: none;
+    color: #555;
+    padding: 8px 8px 8px 8px;
     margin: 0px 2px 2px 2px;
     text-align: center;
     text-decoration: none;
@@ -116,8 +127,13 @@ img {
 div#site-title-subtitle {
     text-align:center;
     padding-top: 5rem;
-    padding-bottom: 8rem;
+    /* padding-bottom: 8rem; */
+    margin-bottom: 5em;
     line-height: 3rem;
+    /* background-color: #333; */
+    /* background-color: #a0522d; */
+    background-color: #09092a;
+    color: white;
 }
 
 #site-subtitle {
@@ -126,13 +142,13 @@ div#site-title-subtitle {
     font-size: 1em;
 }
 
-#site-title {
+#site-title a {
     /* font-family: "Comic Sans MS", cursive, sans-serif; */
     font-family: "Playfair Display", serif;
     font-size: 4em;
     letter-spacing: -0.01em;
     text-align: center;
-    font-color: #111111;
+    color: white;
 }
 
 time.published {
@@ -218,8 +234,7 @@ h1.post-title {
 /* } */
 
 .page-copyright {
-    text-align: right;
-    border-top: 1px grey;
+    text-align: center;
 }
 
 
@@ -242,8 +257,11 @@ ul.social-sharing li {
     over-flow-y: auto;
     max-height: 85%;
     /* right: 20%; */
-    border-left: 3px solid #8b2200;
+    /* border-left: 3px solid #8b2200; */
+}
 
+.toc-side a {
+        color: #777;
 }
 
 .toc-side li {
@@ -264,12 +282,13 @@ ul.social-sharing li {
 }
 
 .toc-side a.current {
-    color: blue;
+    /* color: #09095a; */
+    color: #1e85ae;
     font-weight: bold;
 }
 
 .toc-side a:hover {
-    color: blue;
+    color: #1e85ae;
     font-weight: bold;
 }
 
@@ -294,6 +313,57 @@ ul.social-sharing li {
     font-weight: bold;
 }
 
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    /* background-color: #ddd; */
+    font-weight: bold;
+}
+
+.botnav {
+    /* background-color: #800000; */
+    /* color: #300000; */
+    color: #73737d;
+    text-align: center;
+    padding: 3px 3px 3px 3px;
+}
+
+.botnav a {
+    float: center;
+    color: #73737d;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+.botnav a:hover {
+    font-weight: bold;
+}
+
+.social {
+    margin-bottom: 1em;
+}
+
+/* Add a color to the active/current link */
+/* .topnav a.active { */
+/*     background-color: #4CAF50; */
+/*     color: white; */
+/* } */
+
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {
 }
@@ -301,16 +371,17 @@ ul.social-sharing li {
 /* Larger than tablet screen */
 @media (min-width: 1025px) {
     .main-column {
-        max-width: 700px;
+        width: 760px;
         position: relative;
         margin: 0 auto 0 auto;
+        padding: 1em;
         /* padding-right: 1.5rem; */
     }
 
     .side-column {
-        width: 400px;
+        width: 380px;
         padding-left: 0em;
-        margin: 0 auto 0em 0;
+        margin: 0 auto 0 0;
         /* position: sticky; */
         /* top: 0; */
         /* border-left: 1px solid #bbbbbb; */
