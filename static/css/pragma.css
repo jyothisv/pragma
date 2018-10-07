@@ -131,7 +131,7 @@ ul {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 11px;
+    font-size: 0.8em;
     /* border-radius: 1px; */
 }
 
@@ -244,10 +244,16 @@ ul.post-categories, ul.mini-post-categories {
     padding-left: 0;
 }
 
-ul.post-categories, ul.mini-post-categories a:hover {
+ul.post-categories a:hover {
     color: #fff;
     font-weight: bold;
 }
+
+ul.mini-post-categories a:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
 
 ul.mini-post-categories {
     margin-top: 0px;
