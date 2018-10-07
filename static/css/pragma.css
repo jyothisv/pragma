@@ -273,11 +273,26 @@ ul.social-sharing li {
     font-weight: bold;
 }
 
+.toc-inline {
+    max-width: 70%;
+    margin: 3px auto 50px auto;
+    padding-top: 5px;
+    padding-left: 10px;
+    border: 1px dashed brown;
+}
 
 .toc-inline li {
     list-style-type: none;
 }
 
+.toc-inline li > ul li {
+    list-style-type: circle;
+}
+
+.toc-inline .toc-title {
+    padding-left: 0.7em;
+    font-weight: bold;
+}
 
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {
