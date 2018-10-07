@@ -15,14 +15,26 @@
         <!-- <div class="container"> -->
           <div class="row">
             <!-- <div class="column is-one-fifth"></div> -->
+            <div class="side-column">
+            </div>
+
             <div class="main-column">
             {{- block "main" . }}{{- end }}
             </div>
             <!-- <div class="side-column"> -->
             <!-- {{- partial "sidebar.html" . -}} -->
             <!-- </div> -->
-          <!-- <div class="column is-one-fifth"></div> -->
+            <!-- <div class="column is-one-fifth"></div> -->
+            <div class="side-column">
+              {{- block "sidebar" . }}{{- end }}
+            </div>
+
           </div>
+
+          <!-- <footer> -->
+          <!--   {{- block "footer" .}}{{- end }} -->
+          <!-- </footer> -->
+
         <!-- </div> -->
         {{- partial "footer.html" . -}}
     </body>
