@@ -1,0 +1,3 @@
+{{ range .Params.categories }}
+<li><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="cat-button">{{- . | replaceRE "-" " " -}} </a></li>
+{{ end }}
