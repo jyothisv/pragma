@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<div class="all-taxo">
+{{ range .Pages }}
+<div class="one-taxo">
+  <a href='{{ .Permalink }}'>{{ .Title }}</a> ({{ len .Data.Pages }})
+</div>
+{{ end }}
+
+</div>
+
+{{ end }}
