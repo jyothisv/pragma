@@ -1,8 +1,7 @@
-<main id="main">
-  <div>
-  <h1 id="title">{{ .Title }}</h1>
-  {{ range .Pages }}
-    {{ .Render "summary"}}
-  {{ end }}
-  </div>
-</main>
+{{ define "main" }}
+
+{{ range .Pages }}
+{{ .Render "summary"}}
+{{ end }}
+
+{{ end }}
