@@ -469,6 +469,10 @@ a.nomargin {
     margin-bottom: 31em;
 }
 
+.all-taxo, .all-tags {
+    margin-bottom: 10em;
+}
+
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {
 }
