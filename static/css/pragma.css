@@ -2,6 +2,7 @@
 
 html {
     font-size: 62.5%;
+    height: 100%;
 }
 
 body {
@@ -15,6 +16,9 @@ body {
     margin: 0;
     /* letter-spacing: 0.01em; */
     line-height: 1.7;
+    /* min-height: 100%; */
+    /* position: relative; */
+    /* padding-bottom: 15rem; */
 }
 
 p {
@@ -413,10 +417,14 @@ ul.social-sharing li {
     color: #73737d;
     text-align: center;
     padding: 3px 3px 3px 3px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* right: 0; */
+    /* left: 0; */
 }
 
 .botnav a {
-    float: center;
+    /* float: center; */
     color: #73737d;
     text-align: center;
     padding: 14px 16px;
@@ -455,6 +463,11 @@ a.nomargin {
 /*     background-color: #4CAF50; */
 /*     color: white; */
 /* } */
+
+/* for 404 error */
+.not-found-error {
+    margin-bottom: 31em;
+}
 
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {
