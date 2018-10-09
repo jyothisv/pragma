@@ -5,14 +5,14 @@
 
     {{partial "post-title.html" . }}
 
-    <div class="toc-inline">
     {{ with .TableOfContents }}
-    <div class="toc-title">
-      Table of Contents
-    </div>
-    {{ . }}
-    {{ end }}
+    <div class="toc-inline">
+      <div class="toc-title">
+        In This Page
+      </div>
+      {{ . }}
   </div>
+  {{ end }}
 
 
     {{ .Content }}

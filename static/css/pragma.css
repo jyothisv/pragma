@@ -21,6 +21,15 @@ body {
     /* padding-bottom: 15rem; */
 }
 
+.main-column {
+    padding: 0.5em;
+}
+
+.side-column {
+    padding-left: 0.5em;
+}
+
+
 p {
     margin-top: 0;
 }
@@ -372,7 +381,7 @@ ul.social-sharing li {
     max-width: 70%;
     margin: 3px auto 50px auto;
     padding-top: 5px;
-    padding-left: 10px;
+    padding-left: 15px;
     border: 1px dashed brown;
 }
 
@@ -380,12 +389,15 @@ ul.social-sharing li {
     list-style-type: none;
 }
 
+.toc-inline li > ul {
+    padding-left: 30px;
+}
+
 .toc-inline li > ul li {
     list-style-type: circle;
 }
 
 .toc-inline .toc-title {
-    padding-left: 0.7em;
     font-weight: bold;
 }
 
