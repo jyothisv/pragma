@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<article class="about">
+
+    <h1 class="about-title"><a href='{{ .Permalink }}'> {{ .Title }}</a> </h1>
+
+    <div class="about-content">
+      {{ .Content }}
+    </div>
+
+</article>
+
+  {{ end }}
