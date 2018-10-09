@@ -488,13 +488,46 @@ a.nomargin {
 }
 
 
-.about-title {
+.about-title, .contact-title {
     text-align: center;
     margin-bottom: 1.5em;
 }
 
 .about-content {
     /* margin-bottom: 20em; */
+}
+
+.contact .contact-form {
+    text-align: right;
+}
+
+.contact input {
+    display: block;
+    width: 95%;
+    padding: 0.5em;
+    margin: 0 auto 0.5em auto;
+}
+
+.contact textarea {
+    display: block;
+    width: 95%;
+    height: 20em;
+    padding: 1em;
+    margin: 0 auto 0.5em auto;
+}
+
+.contact button {
+    background-color: #e6e6fa;
+    border: none;
+    color: #555;
+    padding: 8px 8px 8px 8px;
+    margin: 0px 0px 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 14px;
+
 }
 
 /* Larger than mobile screen */
