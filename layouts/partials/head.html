@@ -29,6 +29,9 @@
 
 
 <title>
+  {{ if .IsPage }}
+  {{- .Title }} -
+  {{ end }}
   {{- .Site.Title -}}
 </title>
 
