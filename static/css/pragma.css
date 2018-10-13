@@ -538,6 +538,17 @@ a.nomargin {
 
 }
 
+
+.footnotes {
+    font-size: 80%;
+    color: #888;
+}
+
+.footnotes ol {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {
 }
