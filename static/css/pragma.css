@@ -1,21 +1,21 @@
 /* Pragma.css */
 
 html {
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
     height: 100%;
 }
 
 body {
-    font-size: 1.6em;
-    font-weight: 300;
+    font-size: 1.0em;
+    /* font-weight: 300; */
     color: #111111;
     /* padding-left: 0.5em; */
     /* padding-right: 0.5em; */
-    font-family: 'Merriweather', sans-serif;
-    padding: 0;
-    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    /* padding: 0; */
+    /* margin: 0; */
     /* letter-spacing: 0.01em; */
-    line-height: 1.7;
+    line-height: 1.6;
     /* min-height: 100%; */
     /* position: relative; */
     /* padding-bottom: 15rem; */
@@ -31,7 +31,8 @@ body {
 
 
 p {
-    margin-top: 0;
+    /* font-family: 'Spectral', sans-serif; */
+    /* margin-top: 0; */
 }
 
 a {
@@ -61,36 +62,36 @@ h6 {
 }
 
 h1 {
-    font-size: 4.6rem;
+    font-size: 2.5rem;
     margin-bottom: 1px;
     line-height: 1.2;
     color: #111111;
 }
 
 h2 {
-    font-size: 3.6rem;
+    font-size: 2.0rem;
     line-height: 1.25;
 }
 
 h3 {
-    font-size: 2.8rem;
+    font-size: 1.75rem;
     line-height: 1.3;
 }
 
 h4 {
-    font-size: 2.2rem;
+    font-size: 1.375rem;
     letter-spacing: -0.08rem;
     line-height: 1.35;
 }
 
 h5 {
-    font-size: 1.8rem;
+    font-size: 1.125rem;
     letter-spacing: -.05rem;
     line-height: 1.5;
 }
 
 h6 {
-    font-size: 1.6rem;
+    font-size: 1rem;
     letter-spacing: 0;
     line-height: 1.4;
 }
@@ -99,7 +100,7 @@ h6 {
 /* Code */
 code {
     font-family: "Inconsolata", sans-serif;
-    /* font-size: 86%; */
+    font-size: 86%;
     margin: 0 .2rem;
     padding: .2rem .5rem;
     white-space: nowrap;
@@ -108,14 +109,14 @@ code {
 }
 
 pre {
-    border-left: 0.2rem solid #8a8a96;
+    border-left: 0.1rem solid #8a8a96;
     overflow-y: hidden;
 }
 
 
 pre > code {
     display: block;
-    padding: 1em 1.5em;
+    padding: 1em 0.5em;
     white-space: pre;
 }
 
@@ -197,10 +198,10 @@ img {
 
 div#site-title-subtitle {
     text-align:center;
-    padding-top: 4rem;
+    padding-top: 2.5rem;
     /* padding-bottom: 8rem; */
-    margin-bottom: 5em;
-    line-height: 3rem;
+    margin-bottom: 8em;
+    line-height: 2rem;
     /* background-color: #333; */
     /* background-color: #a0522d; */
     background-color: #09092a;
@@ -210,13 +211,13 @@ div#site-title-subtitle {
 #site-subtitle {
     text-align: center;
     font-family: 'Mali', cursive;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 #site-title a {
     /* font-family: "Comic Sans MS", cursive, sans-serif; */
     font-family: "Playfair Display", serif;
-    font-size: 4em;
+    font-size: 3.8em;
     letter-spacing: -0.01em;
     text-align: center;
     color: white;
@@ -283,6 +284,7 @@ h1.mini-post-title {
 
 h1.post-title {
     padding-top: 0px;
+    /* font-size:  */
     margin: 0em 0.5em 0em 0.5em;
 }
 
@@ -330,8 +332,12 @@ ul.social-sharing {
 
 ul.social-sharing li {
     display: inline;
-    font-size: 3rem;
     padding: 0.3rem;
+}
+
+ul.social-sharing .fab {
+    font-size: 2rem;
+    color: #555;
 }
 
 .toc-side {
@@ -430,6 +436,7 @@ ul.social-sharing li {
     color: #73737d;
     text-align: center;
     /* padding: 0; */
+    font-size: 15px;
     padding: 3px 3px 3px 3px;
     /* position: absolute; */
     /* /\* width: 60px; *\/ */
@@ -443,7 +450,7 @@ ul.social-sharing li {
     color: #73737d;
     text-align: center;
     padding: 14px 16px;
-    font-size: 17px;
+    /* font-size: 15px; */
     margin-top: 5em;
 }
 .botnav a:hover {
@@ -537,6 +544,22 @@ a.nomargin {
 
 /* Larger than tablet screen */
 @media (min-width: 1025px) {
+    body {
+        font-size: 1.1em;
+        /* font-weight: 300; */
+        /* color: #111111; */
+        /* padding-left: 0.5em; */
+        /* padding-right: 0.5em; */
+        /* font-family: 'Spectral', sans-serif; */
+        /* padding: 0; */
+        /* margin: 0; */
+        /* letter-spacing: 0.01em; */
+        line-height: 1.6;
+        /* min-height: 100%; */
+        /* position: relative; */
+        /* padding-bottom: 15rem; */
+    }
+
     .row {
         flex-direction: row;
         /* margin-left: -1.0rem; */
