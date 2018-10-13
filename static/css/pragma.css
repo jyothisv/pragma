@@ -263,6 +263,10 @@ ul.post-categories, ul.mini-post-categories {
     padding-left: 0;
 }
 
+ul.post-categories {
+    padding-bottom: 5px;
+}
+
 ul.post-categories a:hover {
     color: #fff;
     font-weight: bold;
