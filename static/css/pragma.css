@@ -249,6 +249,10 @@ time.mini-published {
     text-align: center;
 }
 
+.alignleft {
+    margin-right: auto;
+}
+
 ul.post-categories li, ul.mini-post-categories li {
     display: inline;
 }
