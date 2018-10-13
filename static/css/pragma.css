@@ -554,6 +554,22 @@ a.nomargin {
     padding-right: 2em;
 }
 
+/* From https://discourse.gohugo.io/t/footnote-styling/114/7 */
+
+a[href^="#fn:"],
+a[href^="#fnref:"] {
+    text-decoration: none;
+    color: #FF8000;
+    font-family: monospace;
+}
+
+a[href^="#fnref:"] {
+    font-size: 1.5em;
+}
+
+a[href^="#fn:"]:before{ content: '[' }
+a[href^="#fn:"]:after{ content: ']' }
+
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {
 }
