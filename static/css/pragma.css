@@ -352,6 +352,7 @@ ul.social-sharing .fab {
     /* border: 1px solid black; */
     over-flow-y: auto;
     max-height: 85%;
+    font-size: 0.9em;
     /* right: 20%; */
     /* border-left: 3px solid #8b2200; */
 }
@@ -373,7 +374,7 @@ ul.social-sharing .fab {
 }
 
 .toc-side .back-to-top {
-    font-size: 0.7em;
+    font-size: 0.8em;
     padding-left: 0em;
 }
 
