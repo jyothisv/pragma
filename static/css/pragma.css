@@ -124,8 +124,8 @@ pre > code {
 /* hr */
 hr {
     border: 0;
-    width: 88%;
-    border-top: 0.1rem solid #f4f5f6;
+    /* width: 88%; */
+    border-top: 0.1rem solid #dddddd;
     margin: 3.0rem auto 3rem auto;
 }
 
