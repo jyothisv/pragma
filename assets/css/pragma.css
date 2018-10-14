@@ -23,7 +23,7 @@ body {
 }
 
 .main-column {
-    padding: 0.8em;
+    padding: 0 1.0em;
 }
 
 .side-column {
@@ -291,6 +291,7 @@ ul.mini-post-categories {
 
 .post-title-header {
     margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 h1.mini-post-title {
@@ -312,10 +313,6 @@ h1.post-title {
 h1.post-title a,
 h1.mini-post-title a {
     color: #111111;
-}
-
-.post-title-header {
-    margin-bottom: 5rem;
 }
 
 /* p:first-of-type:first-letter { */
