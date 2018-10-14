@@ -426,6 +426,7 @@ ul.social-sharing .fab {
     padding-top: 5px;
     padding-left: 15px;
     border: 1px dashed brown;
+    display: none;
 }
 
 .toc-inline li {
