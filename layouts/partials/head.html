@@ -2,10 +2,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" >
 
 
-<link href="https://fonts.googleapis.com/css?family=Inconsolata|Mali|Playfair+Display|Noto+Sans|Noto+Serif" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Inconsolata|Mali|Playfair+Display|Noto+Sans|Noto+Serif" rel="stylesheet"> -->
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
 
 <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"> -->
 <!-- <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css"> -->
@@ -21,8 +21,15 @@
 <!-- Jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="{{ "css/normalize.css" | relURL }}" />
-<link rel="stylesheet" href="{{ "css/pragma.css" | relURL }}" />
+<!-- <link rel="stylesheet" href="{{ "css/normalize.css" | relURL }}" /> -->
+
+{{ $fontsCSS := resources.Get "css/fonts.css" }}
+{{ $normalizeCSS := resources.Get "css/normalize.css" }}
+{{ $pragmaCSS := resources.Get "css/pragma.css"  }}
+{{ $fontawesomeCSS := resources.Get "css/fontawesome.css" }}
+{{ $mainCSS := slice $fontsCSS $normalizeCSS $pragmaCSS $fontawesomeCSS | resources.Concat "css/main.css" | resources.Minify | resources.Fingerprint "sha256" }}
+
+<link rel="stylesheet" href="{{ $mainCSS.Permalink }}" integrity="{{ $mainCSS.Data.Integrity }}"/>
 
 
 
