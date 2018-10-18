@@ -7,6 +7,19 @@
 
     {{ .Content }}
 
+    {{ with .Site.Params.contactFormAction }}
+
+    <div class="contact-form">
+
+      <form action="{{ . }}"
+            method="POST">
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message" minlength=20 maxlength=500 required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    {{ end }}
+
 </article>
 
   {{ end }}
