@@ -611,7 +611,7 @@ a[href^="#fn:"]:after{ content: ']' }
 /* Larger than tablet screen */
 @media (min-width: 1025px) {
     body {
-        font-size: 1.1em;
+        /* font-size: 1.1em; */
         /* font-weight: 300; */
         /* color: #111111; */
         /* padding-left: 0.5em; */
