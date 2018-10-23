@@ -604,6 +604,13 @@ a[href^="#fnref:"] {
 a[href^="#fn:"]:before{ content: '[' }
 a[href^="#fn:"]:after{ content: ']' }
 
+
+/* Mathjax */
+.MJXc-display {
+    overflow-x: scroll;
+    /* font-size: 0.1em; */
+}
+
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {
 }
@@ -665,6 +672,13 @@ a[href^="#fn:"]:after{ content: ']' }
     .toc-inline {
         display: none;
     }
+
+    /* Mathjax */
+    .MJXc-display {
+        overflow: hidden;
+    /* font-size: 0.1em; */
+}
+
 
 }
 
