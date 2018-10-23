@@ -6,7 +6,29 @@
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
   {{ else }}
   {{ if (eq $renderMaths "mathjax" ) }}
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        showProcessingMessages: true,
+        messageStyle: "simple",
+        showMathMenu: true,
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        },
+        "HTML-CSS": { fonts: ["TeX"],
+                      linebreaks: { automatic: true }
+                    }
+                    });
+  </script>
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+
   {{ end }}
   {{ end }}
 
