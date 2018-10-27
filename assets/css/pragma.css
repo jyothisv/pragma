@@ -612,6 +612,48 @@ a[href^="#fn:"]:after{ content: ']' }
     /* font-size: 0.1em; */
 }
 
+.normal-text,
+.normal-text a {
+    text-decoration: none;
+    color: #111111;
+}
+
+.pagination-newer,
+.pagination-older {
+    border: none;
+    background-color: #eefeee;
+    margin: 0px 2px 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* border-radius: 10px; */
+    font-size: 14px;
+}
+
+.pagination-older {
+        padding: 5px 3px 5px 8px;
+}
+
+.pagination-newer {
+        padding: 5px 8px 5px 3px;
+}
+
+.pagination a {
+    color: rgb(0, 108, 108);
+    /* font-weight: 800; */
+    /* color: #888099; */
+}
+
+.pagination > .pagination-newer {
+    float: left;
+}
+
+
+.pagination > .pagination-older {
+    float: right;
+}
+
+
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {
 }

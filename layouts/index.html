@@ -1,15 +1,22 @@
 {{ define "main" }}
 
 <div class="homepage-content">
-  {{.Content}}
+  {{ .Content }}
 </div>
 
 {{ $pages := (where .Pages "Section" "post") }}
-
 {{ range (.Paginate $pages).Pages }}
 {{ .Render "summary" }}
-{{end}}
+{{ end }}
 
-<!-- {{ template "_internal/pagination.html" . }} -->
+
+<div class="pagination normal-text">
+{{ if .Paginator.HasPrev }}
+<a class="pagination-newer" href="{{.Paginator.Prev.URL }}">&laquo; Previous</a>
+{{ end }}
+{{ if .Paginator.HasNext }}
+<a class="pagination-older" href="{{.Paginator.Next.URL }}">Next &raquo;</a>
+{{ end }}
+</div>
 
 {{ end }}
