@@ -6,9 +6,10 @@
 
 {{ $pages := (where .Pages "Section" "post") }}
 
-{{ range first 10 $pages }}
+{{ range (.Paginate $pages).Pages }}
 {{ .Render "summary" }}
 {{end}}
 
+<!-- {{ template "_internal/pagination.html" . }} -->
 
 {{ end }}
