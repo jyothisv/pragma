@@ -23,6 +23,36 @@ body {
     overflow-x: hidden;
 }
 
+div#site-title-subtitle {
+    text-align:center;
+    padding-top: 2.5rem;
+    /* padding-bottom: 8rem; */
+    margin-bottom: 3em;
+    line-height: 2rem;
+    /* background-color: #333; */
+    /* background-color: #a0522d; */
+    background-color: #09092a;
+    color: white;
+}
+
+#site-subtitle {
+    text-align: center;
+    font-family: 'Mali', cursive;
+    font-size: 0.9em;
+}
+
+#site-title {
+    font-family: "Playfair Display", serif;
+    font-size: 3.5em;
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+
+#site-title a {
+    /* font-family: "Comic Sans MS", cursive, sans-serif; */
+    color: white;
+}
+
 .main-column {
     padding: 0 1.0em;
 }
@@ -200,33 +230,6 @@ img {
 
 .categories-post-home {
     text-align: center;
-}
-
-div#site-title-subtitle {
-    text-align:center;
-    padding-top: 2.5rem;
-    /* padding-bottom: 8rem; */
-    margin-bottom: 3em;
-    line-height: 2rem;
-    /* background-color: #333; */
-    /* background-color: #a0522d; */
-    background-color: #09092a;
-    color: white;
-}
-
-#site-subtitle {
-    text-align: center;
-    font-family: 'Mali', cursive;
-    font-size: 0.9em;
-}
-
-#site-title a {
-    /* font-family: "Comic Sans MS", cursive, sans-serif; */
-    font-family: "Playfair Display", serif;
-    font-size: 3.5em;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: white;
 }
 
 time.published {
