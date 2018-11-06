@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Inconsolata';
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
-  src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url(https://fonts.gstatic.com/s/inconsolata/v16/QldKNThLqRwH-OJ1UHjlKGlZ5q0.ttf) format('truetype');
+  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v13/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Mali';
@@ -23,8 +23,8 @@
   src: local('Noto Serif'), local('NotoSerif'), url(https://fonts.gstatic.com/s/notoserif/v6/ga6Iaw1J5X9T9RW6j9bNfFcWbQ.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: 'Inconsolata';
   font-style: normal;
   font-weight: 400;
-  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v13/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhQ.ttf) format('truetype');
+  src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url(https://fonts.gstatic.com/s/inconsolata/v16/QldKNThLqRwH-OJ1UHjlKGlZ5q0.ttf) format('truetype');
 }
