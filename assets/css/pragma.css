@@ -306,7 +306,8 @@ h1.mini-post-title {
 
 h1.post-title,
 h1.about-title,
-h1.contact-title {
+h1.contact-title,
+h1.signup-title {
     padding-top: 0px;
     /* font-size:  */
     margin: 0em 0.5em 0em 0.5em;
@@ -319,8 +320,13 @@ h1.contact-title {
 h1.post-title a,
 h1.mini-post-title a,
 h1.about-title a,
-h1.contact-title a {
+h1.contact-title a,
+h1.signup-title a {
     color: #111111;
+}
+
+.signup-group {
+    margin: 20px 0px 0px 0px;
 }
 
 /* p:first-of-type:first-letter { */
@@ -538,7 +544,7 @@ a.nomargin {
 }
 
 
-.about-title, .contact-title {
+.about-title, .contact-title, .signup-title {
     text-align: center;
     margin-bottom: 1.5em;
 }
@@ -547,17 +553,25 @@ a.nomargin {
     /* margin-bottom: 20em; */
 }
 
+.signup-form,
 .contact-form {
     text-align: right;
     margin-top: 2em;
 }
 
+.signup-form input,
 .contact-form input {
     display: block;
     width: 95%;
     padding: 0.5em;
     margin: 0 auto 0.5em auto;
 }
+
+.signup-form input {
+    width: 80%;
+    margin: 1em auto 0.5em auto;
+}
+
 
 .contact-form textarea {
     display: block;
@@ -567,6 +581,7 @@ a.nomargin {
     margin: 0 auto 0.5em auto;
 }
 
+.signup-form button,
 .contact-form button {
     background-color: #e6e6fa;
     border: none;
@@ -578,9 +593,11 @@ a.nomargin {
     display: inline-block;
     border-radius: 10px;
     font-size: 14px;
-
 }
 
+.signup-form button {
+    margin: 0px 7% 0px auto;
+}
 
 .footnotes {
     font-size: 80%;
